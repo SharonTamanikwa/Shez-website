@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#0D656D;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgb(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 3rem rgba(15, 2, 2, 0.849);
+    --text-shadow:0 1.5rem 3rem rgba(0, 0, 0, .3);
+
+    
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    /*padding: 0, 0, 0, 0;*/
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-decoration: capitalize;
+    
+}
+
+html{
+    /*font-size: medium;
+    overflow: auto;*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: pink;
+}
+section{
+    /*padding: 1rem 5%;
+    padding: 5rem 10%;padding: 1rem 5%;*/
+    padding: 1rem 5%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  
+    background-color: rgb(7, 6, 6);
+}
+.btn:hover{
+    letter-spacing: .1rem;
+}
+@keyframes fadeIn {
+    0%{
+        transform: scale(.0);
+        opacity: 0;
+    }
+}
+
+.header{
+    position: sticky;
+    background-color: whitesmoke;
+    display:flex;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding-top: 0rem;
+    padding-left: 8rem;
+    padding-bottom: .3rem;
+    box-shadow: var(--box-shadow);
+    align-items:center;
+    justify-content: space-between;
+}
+.header .logo{
+   padding-top: .5rem;
+   
+   -webkit-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+   height: 100px;
+}
+.header .logo img{
+    height: 112px;
+    width: auto;
+    border-radius: 50%;
+}
+.header .logo:hover{
+    color: var(--black);
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--main-color);
+}
+.header .navbar a:hover{
+    
+    color: var(--black);
+}
+
+#menu-btn{
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
+.headingtop{
+    position: relative;
+    padding: 0;
+}
+.heading1{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-left: 0rem;
+}
+.headingtop .heading1 .content{
+ 
+    text-align: left;
+    padding-left: 3rem;
+    
+}
+.headingtop .heading1 .content span{
+    color:whitesmoke;
+    display: block;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    animation: fadeIn .2s linear backwards;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+.headingtop .heading1 .content h3{
+    font-size: 3rem;
+    font-style: italic;
+    color: wheat;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    animation: fadeIn .2s linear backwards .4s;
+    padding-bottom: 2rem;
+   
+}
+.headingtop .heading1 .content .btn{
+    animation: fadeIn .2s linear backwards .6s;
+   
+}
+
+
+.heading_title{
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: .2rem;
+    font-size: 2.8rem;
+    color:#0D656D; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading_title span{
+    color:0D656D ;
+    font-size: 2rem;
+}
+
+.container {
+    display:flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding-right: 2rem;
+    
+}
+.container .image {
+    padding-right: 2rem;
+    flex: 1 1 30rem;
+ 
+}
+.container .image img {
+    width:  100%;
+    height: 100%;
+    border-radius: 75px;
+}
+.container-about {
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-right: 2rem;
+    
+}
+.container-about .imag-about{
+    padding-right: 2rem;
+    flex: 1 1 30rem;
+}
+.container-about .imag-about img {
+    width:  100%;
+    height: 100%;
+}
+
+
+.container .text{
+    flex: 1 41rem;
+    margin-top: 0rem; margin: left 5rem;
+    padding: 5rem;
+}
+  
+.container .text h2{
+    font-size: 3rem;
+    color: rgb(37, 36, 36);
+}
+.container .text p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2rem;
+    color:rgb(58, 56, 56);
+}
+
+.container-about .par{
+    flex: 1 41rem;
+    margin-top: 0rem; margin: left 5rem;
+    padding: 5rem;
+    padding-bottom: 30rem;
+}
+.container-about h2{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(37, 36, 36);
+    padding-right: 0rem;
+}
+
+
+.container-about .par ul{
+    font-size: 1.5rem;
+    color: crimson;
+    padding-left: 5rem;
+}
+.intro{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+.intro .skinimage{
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    flex: 1 1 30rem;
+}
+.intro .skinimage img{
+    width: 50%;
+    height: 50%;
+}
+.footer{
+    padding: 0;
+    background-color: black;
+    
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding-left: 4%;
+    padding-top: 3rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:wheat;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    padding-bottom: 1.1rem;
+    font-size: 1.5rem;
+    color: mediumvioletred;
+    display: block;
+}
+.footer .box-container .box .link i{
+    padding: 0.5rem;
+    color: #0D656D;
+}
+.footer .box-container .box a:hover {
+    color: #0D656D;
+    padding-right: 2rem;
+}
+
+.footer .footer-credit .box-container2{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    padding-left: 4%;
+    padding-bottom: 3rem;
+    border-top: .1rem solid var(--light-white);
+
+}
+.footer .footer-credit .box-container2 .box{
+    padding-top: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items:center;
+    
+    color: white;
+    font-size: 1.5rem;
+}
+.footer .footer-credit .box-container2 .box a{
+    justify-content: space-between;
+    padding: 3rem;
+    color: white;
+}
+
+
+   
+
+
